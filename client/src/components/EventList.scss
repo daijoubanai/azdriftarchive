@@ -1,0 +1,97 @@
+.event-list {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.date-list {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@for $i from 1 through 9 {
+    .date-box {
+        &:nth-child(#{$i}) {
+            animation-delay: $i * (.03s);
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
+  
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+   }
+
+.date-box {
+    animation: .2s ease-in-out both fade-in;
+    -webkit-animation: .2s ease-in-out both fade-in;
+    -moz-animation: .2s ease-in-out both fade-in;
+    box-sizing: border-box;
+    background-color: #db6b71;
+    margin: 8px;
+    border-color: rgb(158, 114, 114);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.3em;
+}
+
+.date-box-small {
+    text-align: center;
+    line-height: 58px;
+    width: 400px;
+    height: 60px;
+}
+
+.date-box-large {
+    line-height: 40px;
+    font-size: 14pt;
+    width: 400px;
+    height: 100px;
+}
+
+.date-box:hover {
+    border-color: rgb(187, 156, 156);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.date-box:active {
+    border-color: rgb(187, 156, 156);
+    background-color: rgb(148, 85, 85);
+
+}

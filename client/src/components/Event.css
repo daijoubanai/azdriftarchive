@@ -1,0 +1,72 @@
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-tiles {
+    margin: 2em;
+    height: 200px;
+    width: 200px;
+}
+
+.single-image {
+    width: 90%;
+    min-height: 600px;
+    z-index: 5000;
+}
+
+.single-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.78);
+    z-index: 5;
+}
+  
+.back-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.date-box {
+    color: rgb(250, 250, 250);
+    box-sizing: border-box;
+    background-color: #db6b71;
+    margin: 8px;
+    border-color: rgb(158, 114, 114);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.3em;
+}
+
+.date-box-small {
+    text-align: center;
+    line-height: 58px;
+    width: 400px;
+    height: 60px;
+}
+
+.date-box:hover {
+    border-color: rgb(73, 63, 63);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.date-box:active {
+    border-color: rgb(187, 156, 156);
+    background-color: rgb(148, 85, 85);
+}

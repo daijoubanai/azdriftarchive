@@ -1,0 +1,42 @@
+
+.event-list {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.date-list {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.date-box {
+    box-sizing: border-box;
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+    /*background-color: rgb(158, 114, 114);*/
+    background-color: #db6b71;
+    margin: 8px;
+    border-color: rgb(158, 114, 114);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.3em;
+}
+
+.date-box:hover {
+    border-color: rgb(187, 156, 156);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.date-box:active {
+    border-color: rgb(187, 156, 156);
+    background-color: rgb(148, 85, 85);
+
+}
