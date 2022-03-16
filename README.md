@@ -1,5 +1,5 @@
 # azdriftarchive
-Website for drift photo archive
+Website for photos I've taken over the years going to drifting events in Arizona.
 
 This project is the source files for the sebsite azdriftarchive.com.
 
